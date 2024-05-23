@@ -87,14 +87,14 @@ describe('Mospolytech.ru test', function() {
         await mospolytechPage.open();
     });
 
-    it('Поиск расписания группы 221-322', async function() {
+    it('Поиск расписания группы 221-323', async function() {
         try {
             await mospolytechPage.clickSchedulesButton();
             await mospolytechPage.clickSeeOnWebsiteLink();
             await mospolytechPage.SwitchToNextTab();
-            await mospolytechPage.searchGroup('221-322');
+            await mospolytechPage.searchGroup('221-323');
             await driver.sleep(3000);
-            await mospolytechPage.click(By.xpath('//div[@id="221-322"]'));
+            await mospolytechPage.click(By.xpath('//div[@id="221-323"]'));
             await driver.sleep(2000);
         } catch (error) {
             console.error('An error occurred:', error);
